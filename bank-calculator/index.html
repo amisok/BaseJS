@@ -1,0 +1,67 @@
+﻿<html>
+<head>
+    <title>Credit calculation</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="C:\Users\Ganna\Desktop\site2\jquery-1.2.6.js"></script>
+
+</head>
+<body>
+
+    <div id="header"><h1>Credit on-line calculator</h1> </div>
+    <div id="id1">
+        <div id="banks">
+            <h3>Select a bank:</h3>
+            <a name="main"  onclick="mainFunc(forma1,forma2)"><b><i>Main</i></b></a><br />
+            <a name="firstBank"  onclick="firstFunc(forma1,forma2)"><b><i>Fist bank</i></b></a><br />
+            <a name="secondBank" onclick="secondFunc(forma1,forma2)"><b><i>Second bank</i></b></a><br />
+            <a name="ThirdBank" onclick="thirdFunc(forma1,forma2)"><b><i>Third bank</i></b> </a><br />
+        </div>
+        <div id="calc1">
+            <form name="forma1">
+                
+                <table border="0" cellspacing="5" cellpadding="10">
+                   <caption><h2>Enter Loan Data</h2></caption>
+                    <tr>
+                        <td align="left" valign="top">Amount of the loan ($):</td>
+                        <td><input  type="text" name="amount" size="25"></td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="top">Annual interest (%):</td>
+                        <td><input  type="text" name="percent" size="25"></td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="top">Repayment period (years):</td>
+                        <td><input  type="text" name="years" size="25"></td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="top"><b>Approximate Payments:</b></td>
+                        <td><input type="button" value="Calculate" onclick="Calculation(forma1, forma2);"></td>
+                    </tr>
+                    
+                </table>
+            </form>
+        </div>
+        <div id="calc2">
+            <form name="forma2">
+                <table border="0" cellspacing="5" cellpadding="10">
+
+                    <tr>
+                        <td align="left" valign="top">Fist payment (%):</td>
+                        <td><input type="text" name="fistPaymentPerc" size="25"></td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="top">Fist payment ($):</td>
+                        <td><input type="text" name="fistPayment" size="25" readonly></td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="top">Monthly payment ($):</td>
+                        <td><input type="text" name="monthlyPayment" size="25" readonly></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div id="footer"> </div>
+    </div>
+</body>
+</html>
